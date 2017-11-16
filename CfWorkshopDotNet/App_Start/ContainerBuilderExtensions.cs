@@ -14,7 +14,7 @@ namespace CfWorkshopDotNet
             MySqlProviderConnectorOptions mySqlProviderConnectorOptions = new MySqlProviderConnectorOptions(configuration);
             MySqlServiceInfo mySqlServiceInfo = configuration.GetSingletonServiceInfo<MySqlServiceInfo>();
             MySqlProviderConnectorFactory mySqlProviderConnectorFactory = new MySqlProviderConnectorFactory(
-                mySqlServiceInfo, mySqlProviderConnectorOptions, typeof(MySqlConnection));
+                mySqlServiceInfo, mySqlProviderConnectorOptions);
             containerBuilder.Register<MySqlConnection>(c => (MySqlConnection)mySqlProviderConnectorFactory.Create(null)).InstancePerLifetimeScope();
         }
     }
