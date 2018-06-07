@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a demo app for cloud natvie workshops, written in ASP.NET.
+This is a demo app for cloud native workshops, written in ASP.NET.
 It is intended to demonstrate some of the day-in-the-life features for developers in PCF and Steeltoe
 
  * Push / bind / scale
